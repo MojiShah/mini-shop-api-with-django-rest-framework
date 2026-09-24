@@ -1,0 +1,111 @@
+shop_api/
+│
+├── config/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── accounts/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── permissions.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── products/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── permissions.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── orders/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── permissions.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── favorites/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py
+│
+├── media/
+├── manage.py
+└── requirements.txt
+
+/api/auth/register/
+/api/auth/login/
+/api/auth/refresh/
+/api/auth/me/
+/api/auth/change-password/
+
+/api/categories/
+/api/products/
+/api/products/<id>/
+/api/products/<id>/reviews/
+
+/api/favorites/
+/api/cart/
+/api/cart/items/
+
+/api/orders/
+/api/orders/<id>/
+
+01. Project Setup
+       ↓
+02. Models
+       ↓
+03. Serializers
+       ↓
+04. APIView + URLs
+       ↓
+05. CRUD
+       ↓
+06. Authentication
+       ↓
+07. JWT
+       ↓
+08. Register/Login/Refresh
+       ↓
+09. Permissions
+       ↓
+10. Object-level Permissions
+       ↓
+11. Relationships
+       ↓
+12. Filtering/Search/Ordering
+       ↓
+13. Pagination
+       ↓
+14. Image/File Upload
+       ↓
+15. Cart
+       ↓
+16. Orders
+       ↓
+17. Custom Exception Handling
+       ↓
+18. API Documentation
+       ↓
+19. Testing
+       ↓
+20. Query Optimization
+       ↓
+21. Caching
+       ↓
+22. Throttling
+       ↓
+23. Security
+       ↓
+24. Docker
+       ↓
+25. PostgreSQL
+       ↓
+26. Production
