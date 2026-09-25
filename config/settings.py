@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-0)2%b4((p2ps*x_9=9xpfpv=e_%7vks*67w5j9s-7w$*^1onif
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    
+]
 
 
 # Application definition
@@ -140,3 +142,16 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 #Authentication
 AUTH_USER_MODEL = "accounts.User"
+
+
+REST_FRAMEWORK={
+    "DEFAULT_AUTHENTICATION_CLASSES":[
+        "rest_framework_simplejwt.authentication.JWTAuthentication"
+    ]
+}
+
+from datetime import timedelta
+SIMPLE_JWT={
+    "ACCESS_TOKEN_LIFETIME":timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+}

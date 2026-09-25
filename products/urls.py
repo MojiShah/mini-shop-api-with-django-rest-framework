@@ -1,9 +1,9 @@
 from django.urls import path;
 from .views import (ProductListCreateView,ProductDetailView)
 
-app_name = "products"
+# app_name = "products"
 
-url_patterns=[
+urlpatterns=[
     path("",ProductListCreateView.as_view(),name="product-list-create",),
     path("<int:pk>/",ProductDetailView.as_view(),name="product-detail",),
 ]
