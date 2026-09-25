@@ -134,5 +134,9 @@ MAILERS = {
     },
 }
 
+# Media Files
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+#Authentication
+AUTH_USER_MODEL = "accounts.User"
